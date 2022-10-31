@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coolest Website Status Monitor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Coolest Website Status Monitor</h1>
+    <div>
+        <div class="addSiteForm">
+            <div class="formItem">
+                Request Period:
+                <input type="number" id="requestPeriodInput" min="1" max="300" value="5">
+                seconds (min. 1, max. 300)
+            </div>
+            <div class="formItem">
+                Uptime Interval:
+                <input type="number" id="uptimeIntervalInput" min="1" value="2">
+                minutes (min. 1)
+            </div>
+
+            <div class="formUrlContainer">
+                <div class="formItem">
+                    Add Website:
+                    <input type="url" id="newSiteUrlInput">
+                </div>
+                <div class="formItem">
+                    Port:
+                    <input type="number" id="portInput" min="1" max="65535">
+                </div>
+            </div>
+
+            <button class="formItem" id="addSiteButton">Add Site</button>
+        </div>
+
+        <div>
+            <button class="formItem" id="switchMeteringButton" value="on">Stop All Metering</button>
+            <div id="monitoredSitesList"></div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/libraries/chart.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/libraries/moment.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/libraries/chartjs-adapter-moment.js') }}"></script>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/plots.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+</body>
+</html>

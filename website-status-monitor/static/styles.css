@@ -1,0 +1,47 @@
+body {
+    padding-left: 25px;
+}
+
+#switchMeteringButton {
+    margin-top: 25px;
+}
+
+#monitoredSitesList {
+    margin-top: 50px;
+}
+
+.addSiteForm {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.formUrlContainer {
+    margin-top: 25px;
+}
+
+.formItem {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.monitoredSite {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.deleteSiteButton {
+    color: red;
+    height: 20%;
+    margin-right: 25px;
+}
+
+.plotContainer {
+    width: 500px;
+    border-style: solid;
+    border-color: rgb(126, 170, 85);
+}
+
+.siteStats {
+    margin-left: 25px;
+}
